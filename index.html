@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <div class="container-1">
+        <h2>1: Your Age in Days</h2>
+        <div class="flex-box-container-1">
+            <div>
+                <button id="clickme" class="btn btn-primary">Click Me</button>
+            </div>
+            <div>
+                <button class="btn btn-danger" id="reset">reset</button>
+            </div>
+        </div>
+        <div class="flex-box-container-1">
+            <div id="flex-box-result">
+            </div>
+        </div>
+    </div>
+    <div class="container-2">
+        <h2> 2: Cat Generater </h2>
+
+        <button class="btn btn-success" id="catgen-button" onclick="catgen()">Generate cat</button>
+        <div class="flex-box-container-2" id="CatGenTargetDiv">
+        </div>
+    </div>
+    <div class="container-3">
+        <h2> 3: Rock,Paper,Scissors </h2>
+        <div class="flex-box-rps" id="flex-box-rps-div">
+            <img id="rock" src="./img/rock.jpg" type="img" alt="Rock image" height="150" width="150" onclick="RockPaperScissor(this)">
+            <img id="paper" src="./img/paper.png " type="img" alt="paper image " height="150 " width="150 " onclick="RockPaperScissor(this)">
+            <img id="scissors" src="./img/scissors.png" type="img" alt="scissors image " height="150 " width="150 " onclick="RockPaperScissor(this)">
+        </div>
+    </div>
+    <div class="container-4">
+        <h2 id="change-my-color">4: Change The Color of All buttons </h2>
+        <div class="flex-box-pick-color">
+            <form action="">
+                <select name="backdrop" id="background" onchange="buttonColorChange(this)">
+                    <option value="random">Random</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="reset">Reset</option>
+                    
+                    </select>
+            </form>
+            <button class="btn btn-primary">Wee!</button>
+            <button class="btn btn-danger">Yahoo!</button>
+            <button class="btn btn-warning">Google!</button>
+            <button class="btn btn-success">Facebook!</button>
+        </div>
+    </div>
+
+    <!-- Chllange 5 blackjackk -->
+    <div class="container-5">
+        <h2>5: BlackJack</h2>
+        <h3><span id="BlackJackResult" style="font-family: fantasy;">Let's Play</span></h3>
+        <div class="flex-blackjack-row-1">
+            <div id="your-box">
+                <h2>You:<span id="yourBlackJackResult">0</span></h2>
+            </div>
+            <div id="dealer-box">
+                <h2>Dealer:<span id="dealerBlackJackResult">0</span></h2>
+            </div>
+        </div>
+        <div class="flex-black-jack-row-2">
+            <div>
+                <button class="btn-lg btn-primary mr-2" id="Blackjack-hit-button">Hit</button>
+                <button class="btn-lg btn-warning mr-2" id="Blackjack-stand-button">Stand</button>
+                <button class="btn-lg btn-danger" id="Blackjack-deal-button">Deal</button>
+            </div>
+        </div>
+        <div class="blackjack-row-3">
+
+            <table>
+                <tr>
+                    <th>Wins</th>
+                    <th>Losses</th>
+                    <th>Draw</th>
+                </tr>
+                <tr>
+                    <td><span id="wins">0</span></td>
+                    <td><span id="losses">0</span></td>
+                    <td><span id="draws">0</span></td>
+            </table>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

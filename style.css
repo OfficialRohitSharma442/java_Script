@@ -1,0 +1,95 @@
+.flex-box-container-1,
+.flex-box-container-2,
+.flex-box-rpscontainer-3,
+.flex-box-pick-color,
+.flex-blackjack-row-1,
+.flex-black-jack-row-2,
+.blackjack-row-3 {
+    display: flex;
+    padding: 10px;
+    border: 1px solid black;
+    flex-wrap: wrap;
+    /* flex-diraction: row-revers; */
+    justify-content: space-around;
+}
+
+.flex-box-rps {
+    display: block !important;
+}
+
+.flex-box-container-1 div {
+    padding: 10px;
+    border: 1px solid black;
+    align-items: cener;
+    display: flex;
+}
+
+.flex-blackjack-row-1,
+.flex-black-jack-row-2 {
+    background: url("./img/blackjackBackgroundImage.jpg");
+    color: #ffffff;
+}
+
+.flex-blackjack-row-1 div {
+    border: 1px solid black;
+    padding: 10px;
+    height: 270px;
+    height: 370px;
+    flex: 1;
+    text-align: center;
+}
+
+.flex-blackjack-row-1 img {
+    width: 25%;
+    padding: 10px;
+}
+
+.flex-black-jack-row-2 button {
+    border: 1px solid black;
+    paddind: 10px;
+}
+
+.flex-black-jack-row-2 div {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+table,
+th,
+td {
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.container-1,
+.container-2,
+.container-3,
+.container-4,
+.container-5 {
+    border: 1px solid black;
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#ageInDays {
+    font-size: revert;
+}
+
+.flex-box-container-2 img {
+    margin: 10px;
+    border: 1px solid black;
+    height: 170px;
+    width: 130px;
+    box-shadow: 0px 10px 50px black;
+}
+
+.flex-box-rps img:hover {
+    box-shadow: 0px 10px 50px blue;
+}
+
+.flex-box-rps {
+    justify-content: space-around;
+    display: flex;
+    padding: 11px;
+}
